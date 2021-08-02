@@ -46,7 +46,6 @@ h2 {
     .post {
         margin-left: 1em;
         margin-right: 1em;
-        font-family: 'Montserrat', sans-serif;
     }
 }
 @media screen and (min-width: 321px) and (max-width: 480px) {
@@ -54,7 +53,6 @@ h2 {
     .post {
         margin-left: 1em;
         margin-right: 1em;
-        font-family: 'Montserrat', sans-serif;
     }
 }
 @media screen and (min-width: 481px) and (max-width: 900px){
@@ -113,9 +111,7 @@ h2 {
 }
 @media screen and (min-width: 321px) and (max-width: 480px) {
     /* comes into effect for screens between 321 and 480 pixels (inclusive) */
-    .post-feed a {
-        padding-left: 1em;
-    }
+
 }
 @media screen and (min-width: 481px) and (max-width: 900px){
     /* comes into effect for screens larger than or equal to 481 pixels */
@@ -205,7 +201,7 @@ h2 {
         margin-top: 1.5em;
         margin-left: 0.5em;
         padding: 0;
-        height: 750px;
+        height: 550px;
         display: flex;
         flex-direction: column;
     }
@@ -213,14 +209,10 @@ h2 {
 @media screen and (min-width: 481px) and (max-width: 900px){
     /* comes into effect for screens larger than or equal to 481 pixels */
     .post-feed {
-        margin-top: 1.5em;
-        margin-left: 0.5em;
-        padding: 0;
-        height: 550px;
-        display: flex;
-        flex-direction: column;
+
     }
 }
+
 
 .feed-title {
     display: grid;
@@ -234,19 +226,15 @@ h2 {
 }
 @media screen and (max-width: 320px) {
     /* comes into effect for screens less than or equal to 320 pixels */
-        .feed-title {
-            font-size: 2em;
-            display: flex;
-            flex-direction: column;
-        }
-}
-@media screen and (min-width: 321px) and (max-width: 480px) {
-    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
     .feed-title {
         font-size: 2em;
         display: flex;
         flex-direction: column;
     }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+
 }
 @media screen and (min-width: 481px) and (max-width: 900px){
     /* comes into effect for screens larger than or equal to 481 pixels */
@@ -310,15 +298,24 @@ h2 {
 }
 @media screen and (max-width: 320px) {
     /* comes into effect for screens less than or equal to 320 pixels */
-
+    .feed-img {
+        display: flex;
+        flex-direction: column;
+    }
 }
 @media screen and (min-width: 321px) and (max-width: 480px) {
     /* comes into effect for screens between 321 and 480 pixels (inclusive) */
-
+    .feed-img {
+        display: flex;
+        flex-direction: column;
+    }
 }
 @media screen and (min-width: 481px) and (max-width: 900px){
     /* comes into effect for screens larger than or equal to 481 pixels */
-
+    .feed-img {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 
@@ -372,10 +369,7 @@ h2 {
 }
 @media screen and (min-width: 481px) and (max-width: 900px){
     /* comes into effect for screens larger than or equal to 481 pixels */
-    .articles {
-        display: flex;
-        flex-direction: column;
-    }
+
 }
 
 
@@ -383,7 +377,6 @@ h2 {
     from {opacity: 50%;}
     to {opacity: 100%;}
 }
-
 .read-more:hover {
     color: #e85a4f;
 }
