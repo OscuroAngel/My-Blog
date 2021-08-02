@@ -198,7 +198,12 @@ h2 {
 @media screen and (min-width: 321px) and (max-width: 480px) {
     /* comes into effect for screens between 321 and 480 pixels (inclusive) */
     .post-feed {
-
+        margin-top: 1.5em;
+        margin-left: 0.5em;
+        padding: 0;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
     }
 }
 @media screen and (min-width: 481px) and (max-width: 900px){
