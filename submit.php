@@ -1,12 +1,12 @@
-// if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-//     // Handle unfinished form. Remember to perform additional suitable validation here
-//     if (!isset($_POST['name-input']) || !isset($_POST['email-input']) || !isset($_POST['short-message'])) {
-//         // Send user back to the form
-//         header('Location: /');
-//     }
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // Handle unfinished form. Remember to perform additional suitable validation here
+    if (!isset($_POST['name-input']) || !isset($_POST['email-input']) || !isset($_POST['short-message'])) {
+        // Send user back to the form
+        header('Location: /');
+    }
 
-// // Set default to handle if the user wants to subscribe or not
-// $subscribed = false;
+// Set default to handle if the user wants to subscribe or not
+$subscribed = false;
 
 // Check user has accepted to sign up to the newsletter
 if (isset($_POST['newsletter'])) {
