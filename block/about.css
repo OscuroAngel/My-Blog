@@ -502,3 +502,13 @@ input {
         margin-right: 0.3em;
     }
 }
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+    #mc_embed_signup {
+        width: 200px;
+        padding-left: 0.3em;
+        padding-right: 0.3em;
+        margin-left: 0.3em;
+        margin-right: 0.3em;
+    }
+}
