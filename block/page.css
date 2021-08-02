@@ -1,0 +1,370 @@
+/*Page*/
+
+@import "fonts.css";
+html {scroll-behavior: smooth}
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--bg-color);
+    scroll-behavior: smooth;
+}
+.body-center {
+    display: grid;
+}
+.menu {
+    color: var(--menu-t-color);
+    height: 90px;
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    .menu {
+        height: 45px;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+    .menu {
+        height: 60px;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+    .menu {
+        height: 70px;
+    }
+}
+
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+li {
+    padding-right: 0.8em;
+    font-family: 'Indie Flower', cursive;
+    font-size: 2.5em;
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    li {
+        font-size: 1.1em;
+        padding-top: -0.7em;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+    li {
+        font-size: 1.40em;
+        padding-top: -0.7em;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+    li {
+        font-size: 2em;
+        padding-top: -0.7em;
+    }
+}
+
+li a{
+    text-decoration: none;
+}
+.menu-items:hover {
+    text-shadow: #e85a4f 1px 2px 2px;
+    cursor: pointer;
+    margin-top: 0.3em;
+}
+.active-menu {
+    text-shadow: #e85a4f 1px 2px 2px;
+    cursor: pointer;
+    margin-top: 0.3em;
+}
+
+/*main*/
+.main {
+    display: grid;
+
+}
+#main-photo {
+    width: 100%;
+    height: 30em;
+    -webkit-mask-image: -webkit-gradient( linear, left bottom,
+    left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.0)));
+    /*animation-name: appearence;*/
+    /*animation-duration: 2s;*/
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    #main-photo {
+        height: 13em;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+    #main-photo {
+        height: 18em;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+    #main-photo {
+        height: 25em;
+    }
+}
+
+#appear-anim {
+    animation-name: appearence;
+    animation-duration: 2s;
+}
+@keyframes appearence {
+    0% {opacity: 0;}
+    10% {opacity: 10%;}
+    30% {opacity: 30%;}
+    40% {opacity: 40%;}
+    60% {opacity: 60%;}
+    80% {opacity: 80%;}
+    100% {opacity: 100%;}
+}
+
+/*Welcome*/
+.welcome {
+    height: 360px;
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    .welcome {
+        height: 250px;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+    .welcome {
+        height: 300px;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+    .welcome {
+        height: 255px;
+    }
+}
+
+.welcome-h {
+    left: 400px;
+    color: #e85a4f;
+    text-shadow: #222629 1px 2px 1px;
+    font-family: 'Architects Daughter', cursive;
+    padding-left: 3em;
+    font-size: 3em;
+    animation: show-up 2s;
+    animation-timing-function: linear;
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    .welcome-h {
+        font-size: 1.5em;
+        padding-left: 1em;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+    .welcome-h {
+        font-size: 1.8em;
+        padding-left: 1em;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+    .welcome-h {
+        font-size: 2.1em;
+        padding-left: 1em;
+    }
+}
+
+@keyframes show-up {
+    from {opacity: 0; transform: translateX(-50px); font-size: 0.3em;}
+    to {opacity: 100%; transform: translateX(0px); font-size: 3em;}
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    @keyframes show-up {
+        from {opacity: 0; transform: translateX(-50px); font-size: 0.1em;}
+        to {opacity: 100%; transform: translateX(0px); font-size: 1.5em;}
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+    @keyframes show-up {
+        from {opacity: 0; transform: translateX(-50px); font-size: 0.1em;}
+        to {opacity: 100%; transform: translateX(0px); font-size: 1.8em;}
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+    @keyframes show-up {
+        from {opacity: 0; transform: translateX(-50px); font-size: 0.1em;}
+        to {opacity: 100%; transform: translateX(0px); font-size: 2.1em;}
+    }
+}
+
+.welcome-p {
+    font-size: 1.1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: #222629;
+    padding-left: 4em;
+    padding-right: 4em;
+    text-align: center;
+    line-height: 1.7em;
+    letter-spacing: 0.1em;
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    .welcome-p {
+        font-size: 0.7em;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+    .welcome-p {
+        font-size: 0.9em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+    .welcome-p {
+        font-size: 0.9em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
+.welcome-images {
+    width: 100%;
+}
+/*Footer*/
+
+
+.sponsors {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-left: 19em;
+    margin-top: -1em;
+    width: 27%;
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    .sponsors {
+        margin-left: 3.9em;
+        margin-top: -0.5em;
+        width: 43%;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+    .sponsors {
+        margin-left: 4.5em;
+        margin-top: -0.5em;
+        width: 50%;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+    .sponsors {
+        margin-left: 7.5em;
+        margin-top: -0.5em;
+        width: 40%;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+    .sponsors {
+        margin-left: 9.9em;
+        margin-top: -0.5em;
+        width: 40%;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+    .sponsors {
+        margin-left: 13em;
+        margin-top: -0.5em;
+    }
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    .sponsor {
+
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+    .sponsor {
+        width: 10px;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+
+}
+.copyright {
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    font-weight: lighter;
+    color: var(--menu-t-color);
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    .copyright {
+        font-size: 0.45em;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+    .copyright {
+        font-size: 0.65em;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+
+}
+
+.social-links {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    list-style-type: none;
+    cursor: pointer;
+}
+.social-links p {
+    color: var(--red-extra);
+}
+.social-links p:hover {
+    color: var(--black);
+    cursor: pointer;
+}
+.s-link {
+    font-size: 2em;
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    .s-link {
+        font-size: 1.2em;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+    .s-link {
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+    .s-link {
+        font-size: 1.8em;
+    }
+}

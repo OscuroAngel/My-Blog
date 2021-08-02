@@ -1,0 +1,333 @@
+/*Blog*/
+
+.page-title {
+    font-family: 'Indie Flower', cursive;
+    padding-left: 0.98em;
+    font-size: 2.5em;
+    color: var(--menu-t-color);
+    text-shadow: #e85a4f 1px 2px 2px;
+}
+
+h2 {
+    color: #121214;
+    padding-right: 10em;
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    h2 {
+        padding-right: 1em;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+    h2 {
+        padding-right: 1em;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+    h2 {
+        padding-right: 1em;
+    }
+}
+
+
+.post {
+    color: var(--text-color);
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 6em;
+    margin-right: 6em;
+    margin-top: 3em;
+    line-height: 2em;
+    font-weight: bolder;
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    .post {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+    .post {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+
+}
+
+
+.post-text {
+    color: var(--text-color);
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 6em;
+    margin-right: 6em;
+    margin-top: 3em;
+    line-height: 2em;
+    font-weight: bolder;
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    .post-text {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+    .post-text {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+
+}
+
+
+
+.post:first-letter {
+    font-size: 250%;
+    color: var(--red-extra);
+}
+
+.post-feed a {
+    padding-left: 2em;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3em;
+}
+
+
+
+.blog-title {
+    margin-left: 8em;
+    margin-top: 3em;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: center;
+    font-family: 'Architects Daughter', cursive;
+    letter-spacing: 0.3em;
+    font-size: 1.9em;
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    .blog-title {
+        font-size: 1.2em;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+    .blog-title {
+        font-size: 1.2em;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+    .blog-title {
+        font-size: 1.9em;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+
+
+.post-img {
+    width: 100%;
+    height: 10%;
+    -webkit-mask-image: -webkit-gradient( linear, left bottom,
+    left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.0)));
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+
+}
+
+.post-feed {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-left: 10em;
+    margin-top: 5em;
+    height: 320px;
+    grid-gap: 1.3em;
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    .post-feed {
+        margin-top: 1.5em;
+        margin-left: 0.5em;
+        padding: 0;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+    .post-feed {
+
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+    .post-feed {
+
+    }
+}
+
+
+.feed-title {
+    display: grid;
+    grid-row: 1/1;
+    grid-column: 1/1;
+    font-weight: bold;
+    color: #e85a4f;
+    font-size: 7em;
+    justify-self: center;
+    margin-left: -1.9em;
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+        .feed-title {
+            font-size: 2em;
+            display: flex;
+            flex-direction: column;
+        }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+
+}
+
+
+.feed-title a {
+    font-size: 2em;
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+
+}
+
+
+.post-short {
+    grid-row: 1/3;
+    grid-column: 1/2;
+    color: var(--black);
+    margin-top: 2em;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1em;
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    .post-short {
+        font-size: 0.8em;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+
+}
+
+
+.feed-img {
+    display: grid;
+    grid-row: 1/3;
+    width: 80%;
+    height: auto;
+    background: linear-gradient(to bottom right, transparent 5%, white 5%);
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    .feed-img {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+
+}
+
+
+.read-more {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.9em;
+    display: grid;
+    grid-row: 3/3;
+    grid-column: 1/1;
+    width: 30%;
+    height: 30%;
+    margin-left: -2.7em;
+    animation: read-arrow 2s alternate backwards infinite;
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    .read-more {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.6em;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+
+}
+
+
+
+@keyframes read-arrow {
+    from {opacity: 50%;}
+    to {opacity: 100%;}
+}
+.read-more:hover {
+    color: #e85a4f;
+}

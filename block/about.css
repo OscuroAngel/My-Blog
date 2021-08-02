@@ -1,0 +1,491 @@
+/*About*/
+body {
+    scroll-behavior: smooth;
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+    body {
+        max-width: 480px;
+    }
+}
+html {scroll-behavior: smooth}
+.about {
+    display: grid;
+    color: #222629;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 0.1em;
+    background-color: #eae7dc;
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    .about {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 305px;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+    .about {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+
+}
+
+/*Text Decoratios*/
+.red-text {
+    background: #e85a4f;
+    font-size: larger;
+    color: white;
+}
+
+.inverted-text {
+    color: #f5f5f5;
+    background: #222629;
+    font-size: larger;
+}
+
+.gray-highlight {
+    background: lightgrey;
+    font-size: larger;
+}
+
+.bold {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+
+
+
+/*intro*/
+#intro-about {
+    display: grid;
+    grid-template-columns: 7fr 7fr;
+    grid-gap: 3em;
+    margin-top: 3em;
+    justify-items: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 0.1em;
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    #intro-about {
+        grid-template-columns: 1fr;
+        justify-items: left;
+        align-items: start;
+        margin: 0;
+        grid-gap: -1em;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+    #intro-about {
+        grid-template-columns: 1fr;
+        justify-items: left;
+        align-items: start;
+        margin: 0;
+        grid-gap: -1em;
+        max-width: 380px;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+    #intro-about {
+        grid-template-columns: 1fr 2fr;
+        justify-items: left;
+        align-items: start;
+        margin-top: 2em;
+    }
+}
+
+.head-about {
+    color: #222629;
+    font-size: 3.1em;
+    padding-left: 1.8em;
+    padding-top: -1em;
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    .head-about {
+        font-size: 1.3em;
+        width: 150px;
+        margin-left: -1em;
+        padding-top: 2em;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+    .head-about {
+        font-size: 1.5em;
+        width: 250px;
+        margin-left: -1em;
+        padding-top: 2em;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+    .head-about {
+        font-size: 2em;
+        width: 250px;
+        margin-left: -1em;
+        padding-top: 2em;
+    }
+}
+
+/*media*/
+#me-about {
+    width: 70%;
+    margin-left: 4em;
+    padding-bottom: 1em;
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    #me-about {
+        width: 100%;
+        margin-top: -1em;
+        margin-left: 0;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+    #me-about {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+    #me-about {
+        width: 50%;
+        margin-left: -6em;
+    }
+}
+
+/*About*/
+.about-title {
+    margin-left: 4em;
+    margin-right: 17em;
+    font-size: 2.1em;
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    .about-title {
+        font-size: 1.5em;
+        margin-left: 1em;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+    .about-title {
+        font-size: 1.3em;
+        margin-left: 1em;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+    .about-title {
+        font-size: 1.3em;
+        margin-left: 1em;
+    }
+}
+
+.about-text {
+    margin-left: 8em;
+    margin-right: 8em;
+    padding-bottom: 2em;
+    font-size: 1em;
+
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    .about-text {
+        font-size: 0.7em;
+        margin-left: 1em;
+        margin-right: 1em;
+        width: 280px;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+    .about-text {
+        font-size: 0.7em;
+        margin-left: 1em;
+        margin-right: 1em;
+        max-width: 300px;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+    .about-text {
+
+    }
+}
+/*subscribe field*/
+.bg-sunscribe {
+
+}
+#subscribe-filed {
+    display: grid;
+    background-color: #222629;
+    padding: 4em;
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+        #subscribe-filed {
+            padding: 1em;
+            margin: 0;
+        }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+        #subscribe-filed {
+            padding: 1em;
+            margin: 0;
+            align-items: start;
+            justify-items: start;
+        }
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+
+}
+
+.about-subscribe {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2em;
+    margin: -0.02em;
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    .about-subscribe {
+        font-size: 1em;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+    .about-subscribe {
+        font-size: 1.2em;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+
+}
+
+.collab {
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.2em;
+    margin-top: 1em;
+    margin-bottom: 4em;
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    .collab {
+        font-size: 1em;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+    .collab {
+        font-size: 1em;
+        max-width: 300px;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+
+}
+.sub-box {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+        .sub-box {
+            padding: 0;
+            margin: 0;
+        }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+    .sub-box {
+        padding: 0;
+        margin: 0;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+
+}
+
+/*get in touch*/
+.get-in-touch {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    .get-in-touch {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0;
+        padding: 0;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+    .get-in-touch {
+        margin: 0;
+        padding: 0;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+
+}
+
+.get-in-touch-title {
+    font-size: 2.1em;
+    margin: -1em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    font-family: 'Nunito', sans-serif;
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    .get-in-touch-title {
+        font-size: 1.3em;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+    .get-in-touch-title {
+        font-size: 1.5em;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+
+}
+/*subscribe*/
+
+.subscribe {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 1em;
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+        .subscribe {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+        .subscribe {
+            display: grid;
+            grid-template-columns: 1fr;
+            padding: 0;
+            margin: 0;
+        }
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+
+}
+
+#subscribe-b {
+    background-color: #e85a4f;
+    color: #eae7dc;
+    padding: 1em;
+    width: 20em;
+    border: none;
+    border-radius: 20px;
+    box-shadow: #eae7dc 1px 1px 7px;
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    #subscribe-b {
+        width: 10em;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+    #subscribe-b {
+        width: 10em;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+
+}
+
+#subscribe-b:hover {
+    background-color: #eae7dc;
+    color: #222629;
+    cursor: pointer;
+}
+input {
+    padding: 1em;
+    width: 25em;
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    input {
+        width: 10em;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+    input {
+        width: 10em;
+        padding: 0.51em;
+        margin: 0.50em;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+
+}
+
+#short-message {
+    height: 8em;
+    width: 20em;
+    font-family: 'Nunito', sans-serif;
+    font-size: larger;
+    border-radius: 20px;
+    text-align: center;
+}
+@media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    #short-message {
+        width: 11em;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+    #short-message {
+        width: 13em;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 900px){
+    /* comes into effect for screens larger than or equal to 481 pixels */
+
+}
