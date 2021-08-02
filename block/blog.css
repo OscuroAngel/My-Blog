@@ -46,6 +46,7 @@ h2 {
     .post {
         margin-left: 1em;
         margin-right: 1em;
+        font-family: 'Montserrat', sans-serif;
     }
 }
 @media screen and (min-width: 321px) and (max-width: 480px) {
@@ -53,6 +54,7 @@ h2 {
     .post {
         margin-left: 1em;
         margin-right: 1em;
+        font-family: 'Montserrat', sans-serif;
     }
 }
 @media screen and (min-width: 481px) and (max-width: 900px){
