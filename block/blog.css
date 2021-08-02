@@ -111,7 +111,9 @@ h2 {
 }
 @media screen and (min-width: 321px) and (max-width: 480px) {
     /* comes into effect for screens between 321 and 480 pixels (inclusive) */
-
+    .post-feed a {
+        padding-left: 1em;
+    }
 }
 @media screen and (min-width: 481px) and (max-width: 900px){
     /* comes into effect for screens larger than or equal to 481 pixels */
@@ -209,8 +211,12 @@ h2 {
 @media screen and (min-width: 481px) and (max-width: 900px){
     /* comes into effect for screens larger than or equal to 481 pixels */
     .post-feed {
-
-    }
+        margin-top: 1.5em;
+        margin-left: 0.5em;
+        padding: 0;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
 }
 
 
@@ -234,7 +240,11 @@ h2 {
 }
 @media screen and (min-width: 321px) and (max-width: 480px) {
     /* comes into effect for screens between 321 and 480 pixels (inclusive) */
-
+    .feed-title {
+        font-size: 2em;
+        display: flex;
+        flex-direction: column;
+    }
 }
 @media screen and (min-width: 481px) and (max-width: 900px){
     /* comes into effect for screens larger than or equal to 481 pixels */
@@ -377,6 +387,7 @@ h2 {
     from {opacity: 50%;}
     to {opacity: 100%;}
 }
+
 .read-more:hover {
     color: #e85a4f;
-}
+}}
