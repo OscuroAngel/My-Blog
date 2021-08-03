@@ -22,6 +22,10 @@ html {scroll-behavior: smooth}
     .about {
         display: grid;
         grid-template-columns: minmax(320px);
+
+    }
+    element.style {
+        width: 375px;
     }
 }
 @media screen and (min-width: 321px) and (max-width: 480px) {
@@ -242,6 +246,7 @@ html {scroll-behavior: smooth}
         #subscribe-filed {
             padding: 1em;
             margin: 0;
+
         }
 }
 @media screen and (min-width: 321px) and (max-width: 480px) {
