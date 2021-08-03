@@ -166,8 +166,9 @@ html {scroll-behavior: smooth}
 @media screen and (min-width: 481px) and (max-width: 900px){
     /* comes into effect for screens larger than or equal to 481 pixels */
     #me-about {
-        width: 50%;
-        margin-left: -6em;
+        width: 70%;
+        margin-left: 4em;
+        padding-bottom: 1em;
     }
 }
 
